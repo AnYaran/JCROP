@@ -1,0 +1,180 @@
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: " ";
+}
+.clearfix:after {
+    clear: both;
+}
+.avatar-content {
+    width: 720px;
+    padding: 20px 0 0 20px;
+    text-align: left;
+    color: #666;
+    font-family: "SimSun";
+    font-size: 12px;
+    overflow: hidden;
+}
+.avatar-left {
+    float: left;
+}
+.avatar-right {
+    float: right;
+    width: 180px;
+    height: 390px;
+    margin-left: 20px;
+    padding-left: 36px;
+    border-left: 1px solid #e5e5e5;
+}
+.avatar-right .avatar-p {
+    font-size: 18px;
+}
+.avatar-inner {
+    width: 440px;
+    height: 301px;
+    overflow: auto;
+}
+.avatar-p {
+    margin: 0;
+    padding: 0 0 18px 0;
+}
+.avatar-openimg {
+    position: relative;
+    padding-bottom: 70px;
+}
+.avatar-msg {
+    color: #999;
+    display: inline-block;
+    margin-left: 6px;
+    text-align: left;
+}
+.avatar-content input {
+    color: #666;
+    font-family: "SimSun";
+    margin: 0;
+    outline: none;
+    padding: 0;
+}
+.avatar-filebtn,
+.avatar-savebtn,
+.avatar-cancelbtn {
+    width: 130px;
+    height: 38px;
+    line-height: 38px;
+    border: none;
+    background: url('../img/set_avatar_btn.png') no-repeat 0 0;
+    text-align: center;
+}
+input.avatar-savebtn {
+    background-position: 0 -38px;
+    color: #fff;
+}
+input.avatar-cancelbtn {
+    background-position: 0 0;
+    margin-left: 6px;
+}
+input.avatar-filebtn-hover {
+    background-position: 0 -75px;
+}
+input.avatar-savebtn-hover {
+    background-position: 0 -150px;
+    color: #fff;
+    cursor: pointer;
+}
+input.avatar-cancelbtn-hover {
+    background-position: 0 -75px;
+    color: #666;
+    cursor: pointer;
+}
+input.avatar-disabled {
+    background-position: 0 -113px;
+    color: #bbb;
+    cursor: default;
+}
+.avatar-file {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 130px;
+    height: 38px;
+    font-size: 30px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.avatar-crop {
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    line-height: 300px;
+    background: #e2e2e2;
+    text-align: center;
+    overflow: hidden;
+    z-index: 1001;
+}
+.avatar-crop img {
+    max-height: 300px;
+    max-width: 400px;
+    vertical-align: middle;
+    visibility: hidden;
+}
+.avatar-crop .loadingImg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 32px;
+    width: 32px;
+    margin-left: -16px;
+    margin-top: -16px;
+    visibility: visible;
+}
+.avatar-save {
+    position: relative;
+    padding-top: 40px;
+}
+
+.previewboxbig {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+.previewboxsmall {
+    width: 55px;
+    height: 55px;
+    overflow: hidden;
+}
+.avatar-right p.avatar-previewp {
+    font-size: 12px;
+    margin: 6px 0 18px 0;
+}
+.avatar-previewbig {
+    width: 100px;
+    height: 100px;
+}
+.avatar-previewsmall {
+    width: 55px;
+    height: 55px;
+}
+.avatar-refile {
+    height: 38px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    font-size: 30px;
+    position: absolute;
+    left: 140px;
+    top: 40px;
+    width: 130px;
+}
+.avatar-status {
+    background: url('../img/set_avatar_status.png') 0 0;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    margin-left: 18px;
+    padding-left: 20px;
+}
+.avatar-statuserror {
+    background-position: 0 -18px;
+}
+.avatar-hide {
+    display: none;
+}

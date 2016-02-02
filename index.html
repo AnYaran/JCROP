@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>上传图片裁剪预览</title>
+    <script src="js/jquery.min.js"></script>
+    <!-- AjaxFileUpload -->
+    <script src="plugins/ajaxfileupload/ajaxfileupload.min.js"></script>
+    <!-- Jcrop -->
+    <link rel="stylesheet" href="plugins/Jcrop/jquery.Jcrop.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/avatar_upload.css" type="text/css" />
+    <script src="plugins/Jcrop/jquery.Jcrop.min.js"></script>
+    <script src="js/avatar_upload.js"></script>
+</head>
+<body>
+<div class="avatar-content clearfix">
+    <div class="avatar-left">
+        <div class="avatar-inner">
+            <div class="avatar-crop avatar-hide" id="avatarCrop">
+                <span id="loadingSpan">
+                    <img src="img/loadingAvatar.gif" class="loadingImg">
+                </span>
+                <img src="img/small_blank.gif" id="cropImg">
+            </div>
+            <p class="avatar-p">选择本地照片，上传编辑自己的头像</p>
+            <div class="avatar-openimg">
+                <input type="button" class="avatar-filebtn" id="openImgBtn" value="选择图片">
+                <input type="file" class="avatar-file" name="file" id="fileImg">
+                <span class="avatar-msg">支持jpg、jpeg、gif、png、bmp格式的图片</span>
+            </div>
+        </div>
+        <form id="form_crop_avatar">
+            <input type="hidden" name="tmp_avatar" id="crop_tmp_avatar" value="">
+            <input type="hidden" name="x1" id="crop_x1" value="">
+            <input type="hidden" name="y1" id="crop_y1" value="">
+            <input type="hidden" name="x2" id="crop_x2" value="">
+            <input type="hidden" name="y2" id="crop_y2" value="">
+            <input type="hidden" name="w" id="crop_w" value="">
+            <input type="hidden" name="h" id="crop_h" value="">
+        </form>
+        <div class="avatar-save">
+            <input type="button" value="保存头像" class="avatar-savebtn avatar-disabled" disabled id="saveAvatar">
+            <input type="button" value="重新选择" class="avatar-cancelbtn avatar-hide" id="avatarRechoicebtn">
+            <input type="file" class="avatar-refile avatar-hide" name="file" id="fileReImg">
+            <span class="avatar-status avatar-hide" id="avatarPrompt">成功更新头像</span>
+        </div>
+    </div>
+    <div class="avatar-right">
+        <p class="avatar-p">头像预览</p>
+        <p id="previewBoxBig" class="previewboxbig">
+            <img src="img/default.jpeg" class="avatar-previewbig" id="previewImgBig">
+        </p>
+        <p class="avatar-p avatar-previewp"><span>大头像100*100</span></p>
+        <p id="previewBoxSmall" class="previewboxsmall">
+            <img src="img/default.jpeg" class="avatar-previewsmall" id="previewImgSmall">
+        </p>
+        <p class="avatar-p avatar-previewp"><span>小头像55*55</span></p>
+    </div>
+</div>
+</body>
+</html>
